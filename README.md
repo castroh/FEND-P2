@@ -4,16 +4,14 @@ Memory game that displays 16 cards face down. User will click through and match 
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Dependencies](#instructions)
 * [Contributing](#contributing)
+* [Acknowledgements](#acknowledgements)
 
-## Instructions
+## Dependencies
+* Font Awesome CSS Stylesheet: https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+* Google Font (Coda Family): https://fonts.googleapis.com/css?family=Coda
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
 ## Contributing
 
