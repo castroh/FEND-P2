@@ -229,11 +229,12 @@ function newGame(){
             star.style.display = 'inline';
         }
     }
+    clickedCards = [];
     stopTimer();
     timerReset();
     matched = 0;
     shuffler();
-    timerStart();
+    timerStart = false;
 }
 
 
