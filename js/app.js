@@ -73,7 +73,15 @@ function timerStarter(){
         }, 1000)  
 }
 
-                      
+function timerReset(){
+    timerStart = false;
+    timerCount = 0;
+
+    var timerElement = document.querySelector('.timer');
+    timerElement.innerHTML = '0';
+    
+}
+
 deck.addEventListener('click', event => {
                       var firstClick = event.target;
     if (conditionals(firstClick)){
@@ -208,16 +216,24 @@ function newGame(){
     
     for (card of cardsMatched){
         card.classList.remove('open', 'show', 'match');
-    
     }
+    
+    for (card of clickedCards){
+        card.classList.remove('open', 'show', 'match');
+    }
+    
+    
     var stars = document.querySelectorAll('.stars li');
     for (star of stars){
         if(star.style.display = 'none'){
             star.style.display = 'inline';
         }
     }
+    stopTimer();
+    timerReset();
     matched = 0;
     shuffler();
+    timerStart();
 }
 
 
